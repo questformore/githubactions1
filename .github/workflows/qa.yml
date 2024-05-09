@@ -1,0 +1,21 @@
+name: qa
+on:
+  workflow_dispatch:
+  push:
+    branches: [develop]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repo
+        run: echo "Repo cloned"
+      - name: Get Packages and dependencies
+        run: echo "Downloaded Packages"
+      - name: Build Code
+        run: echo "Built Code"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to ECS
+        run: echo "Deploye to AWS containers"
+  
