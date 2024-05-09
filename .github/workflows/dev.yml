@@ -1,5 +1,8 @@
 name: workflow1
-on: [workflow_dispatch, push] 
+on: 
+  workflow_dispatch:
+  push:
+    branches: [develop]
 jobs:
   build: 
     runs-on: ubuntu-latest
