@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repo
-        run: echo "Cloned Repository"
+        run: |
+              echo "Get repo url"
+              echo "Clone repo"        
       - name: Get packages
         run: echo "Downloaded Packages"
       - name: Build Code
