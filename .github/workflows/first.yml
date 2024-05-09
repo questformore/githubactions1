@@ -1,0 +1,13 @@
+name: workflow1
+on: workflow_dispatch  
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repo
+        run: echo "Cloned Repository"
+      - name: Get packages
+        run: echo "Downloaded Packages"
+      - name: Build Code
+        run: echo "Code built"
+  
